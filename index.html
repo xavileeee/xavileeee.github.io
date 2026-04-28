@@ -246,13 +246,24 @@
     }
 
     .chip {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
       background: rgba(31, 122, 140, 0.08);
       color: #1a6372;
       border: 1px solid rgba(31, 122, 140, 0.2);
-      border-radius: 999px;
-      padding: 7px 12px;
+      border-radius: 16px;
+      padding: 9px 12px;
       font-size: 0.84rem;
       font-weight: 600;
+    }
+
+    .chip-rating {
+      color: var(--accent-2);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
     }
 
     .projects {
@@ -376,7 +387,7 @@
     <header class="hero">
       <article class="hero-main">
         <span class="tag">Administrador TIC | Mérida, España</span>
-        <h1>Infraestructura robusta para entornos educativos con automatización e IA local.</h1>
+        <h1>Infraestructuras para entornos educativos con automatización e IA local.</h1>
         <p class="lead">
           Soy Javier Alfonso de las Heras, trabajo en el IES Sáenz de Buruaga (Mérida, España). Me centro en optimizar sistemas, redes y despliegues para que la tecnología de un centro educativo sea estable, escalable y útil. También me especializo en seguridad de la información y en nuevas arquitecturas de IA aplicadas a producción, usando IA en mi día a día para aumentar la productividad y con foco constante en aprender tecnologías nuevas.
         </p>
@@ -406,7 +417,7 @@
     <section id="sobre-mi" class="panel">
       <h2>Sobre mí</h2>
       <p class="lead">
-        Mi enfoque profesional combina administración de sistemas Debian/Ubuntu, automatización con Puppet y despliegues en contenedores para construir infraestructuras educativas confiables. Cuento con amplia experiencia en seguridad de la información: ENS, protección de datos e ISO 27000 con proyectos con certificacion acreditada.
+        Mi enfoque profesional combina administración de sistemas Debian/Ubuntu, automatización con Puppet y despliegues en contenedores para construir infraestructuras educativas confiables. Cuento con amplia experiencia en seguridad de la información: ENS, protección de datos e ISO 27000 con proyectos con certificación acreditada.
         Soy entusiasta de la IA local y cloud, y actualmente sigo formación de la Universidad de Extremadura en programación con IA, agentes, MCPs, SKILL y arquitecturas multiagente. Me encanta aprender tecnologías nuevas de forma continua y llevarlas a casos reales, y soy entusiasta del setup de doble monitor para trabajar con más foco y eficiencia. Fuera del trabajo, disfruto la impresión 3D y la electrónica aplicada a proyectos prácticos, combinándolas para hacer proyectos de robótica casera.
       </p>
     </section>
@@ -417,59 +428,59 @@
         <div>
           <h3>Sistemas y Virtualización</h3>
           <div class="stack">
-            <span class="chip">Debian / Ubuntu</span>
-            <span class="chip">Docker & Compose</span>
-            <span class="chip">Proxmox VE</span>
-            <span class="chip">TrueNAS</span>
-            <span class="chip">WSL2</span>
-            <span class="chip">Puppet</span>
+            <span class="chip">Debian / Ubuntu<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">Docker & Compose<span class="chip-rating">★★★★</span></span>
+            <span class="chip">Proxmox VE<span class="chip-rating">★★★</span></span>
+            <span class="chip">TrueNAS<span class="chip-rating">★★</span></span>
+            <span class="chip">WSL2<span class="chip-rating">★★★</span></span>
+            <span class="chip">Puppet<span class="chip-rating">★★★★</span></span>
           </div>
         </div>
         
         <div>
           <h3>Infraestructuras</h3>
           <div class="stack">
-            <span class="chip">Active Directory</span>
-            <span class="chip">LDAP</span>
-            <span class="chip">GPOs & WSUS</span>
-            <span class="chip">Redes y Seguridad</span>
-            <span class="chip">ENS & ISO 27001</span>
+            <span class="chip">Active Directory<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">LDAP<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">GPOs & WSUS<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">Redes y Seguridad<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">ENS & ISO 27001<span class="chip-rating">★★★★★</span></span>
           </div>
         </div>
 
         <div>
           <h3>IA Local y Automatización</h3>
           <div class="stack">
-            <span class="chip">RAG & Embeddings</span>
-            <span class="chip">Open WebUI</span>
-            <span class="chip">Qdrant</span>
-            <span class="chip">Agentes (MCP / SKILLs)</span>
-            <span class="chip">n8n / Node-RED</span>
+            <span class="chip">RAG & Embeddings<span class="chip-rating">★★★</span></span>
+            <span class="chip">Open WebUI<span class="chip-rating">★★★</span></span>
+            <span class="chip">Qdrant<span class="chip-rating">★★★</span></span>
+            <span class="chip">Agentes (MCP / SKILLs)<span class="chip-rating">★★</span></span>
+            <span class="chip">n8n / Node-RED<span class="chip-rating">★★</span></span>
           </div>
         </div>
 
         <div>
           <h3>Desarrollo y Programación</h3>
           <div class="stack">
-            <span class="chip">Github</span>
-            <span class="chip">VS Code</span>
-            <span class="chip">Antigravity</span>
-            <span class="chip">Google Apps Script</span>
-            <span class="chip">Administrador Google Workspace (G Suite)</span>
-            <span class="chip">SSO (SAML/OIDC)</span>
-            <span class="chip">Vibe Coding</span>
-            <span class="chip">Spec Kit</span>
+            <span class="chip">Github<span class="chip-rating">★★★</span></span>
+            <span class="chip">VS Code<span class="chip-rating">★★★</span></span>
+            <span class="chip">Antigravity<span class="chip-rating">★★★</span></span>
+            <span class="chip">Google Apps Script<span class="chip-rating">★★★★</span></span>
+            <span class="chip">Administrador Google Workspace (G Suite)<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">SSO (SAML/OIDC)<span class="chip-rating">★★★</span></span>
+            <span class="chip">Vibe Coding<span class="chip-rating">★★★★</span></span>
+            <span class="chip">Spec Kit<span class="chip-rating">★★</span></span>
           </div>
         </div>
 
         <div>
           <h3>Laboratorio Maker & DIY</h3>
           <div class="stack">
-            <span class="chip">Home Assistant</span>
-            <span class="chip">Impresión 3D (FDM/Resina)</span>
-            <span class="chip">Diseño (Fusion 360 / SolidWorks)</span>
-            <span class="chip">Rasbperry pi, Arduino, ESP32 & Robótica</span>
-            <span class="chip">Corte Láser (fireworks)</span>
+            <span class="chip">Home Assistant<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">Impresión 3D (FDM/Resina)<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">Diseño (Fusion 360 / SolidWorks)<span class="chip-rating">★★★★★</span></span>
+            <span class="chip">Rasbperry pi, Arduino, ESP32 & Robótica<span class="chip-rating">★★★★</span></span>
+            <span class="chip">Corte Láser (fireworks)<span class="chip-rating">★★★★★</span></span>
           </div>
         </div>
       </div>
